@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -37,45 +36,17 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1.5rem;
+      padding: 3rem 1rem;
       background: #1a1a1a;
     }
     .symbol-nav img {
-      width: 80px;
+      width: 100px;
       height: auto;
       cursor: pointer;
       transition: transform 0.3s;
     }
     .symbol-nav img:hover {
       transform: scale(1.1);
-    }
-    .section-title {
-      text-align: center;
-      padding-top: 2rem;
-      font-size: 1.6rem;
-      color: gold;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .product {
-      background-color: #222;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .product-name {
-      padding: 1rem;
-      font-size: 1rem;
     }
     footer {
       text-align: center;
@@ -89,77 +60,19 @@
   <header>
     <div class="title">MODALUXOUT</div>
     <nav>
-      <a href="#sneakers">Sneakers</a>
-      <a href="#tshirt">T-shirt</a>
-      <a href="#accessori">Accessori</a>
-      <a href="#contatti">Contatti</a>
+      <a href="sneakers/">Sneakers</a>
+      <a href="tshirt/">T-shirt</a>
+      <a href="accessori/">Accessori</a>
     </nav>
   </header>
 
-  
-<div class="symbol-nav">
-  <a href="#sneakers"><img src="sneakers.png" alt="Sneakers"></a>
-  <a href="#tshirt"><img src="tshirt.png" alt="T-shirt"></a>
-  <a href="#accessori"><img src="accessori.png" alt="Accessori"></a>
-</div>
+  <div class="symbol-nav">
+    <a href="sneakers/"><img src="sneakers.png" alt="Sneakers"></a>
+    <a href="tshirt/"><img src="tshirt.png" alt="T-shirt"></a>
+    <a href="accessori/"><img src="accessori.png" alt="Accessori"></a>
+  </div>
 
-
-  <h2 id="sneakers" class="section-title">Sneakers</h2><div class="grid">
-        <div class="product">
-          <img src="sneakers/nike-af1.jpg" alt="Nike Air Force 1 Black/White" />
-          <div class="product-name">Nike Air Force 1 Black/White</div>
-        </div>
-        
-        <div class="product">
-          <img src="sneakers/nb-rosa-box.jpg" alt="New Balance Rosa Boxed" />
-          <div class="product-name">New Balance Rosa Boxed</div>
-        </div>
-        
-        <div class="product">
-          <img src="sneakers/nb-rosa.jpg" alt="New Balance Rosa Pastello" />
-          <div class="product-name">New Balance Rosa Pastello</div>
-        </div>
-        
-        <div class="product">
-          <img src="sneakers/nb-rosa-chiara.jpg" alt="New Balance Rosa Chiaro" />
-          <div class="product-name">New Balance Rosa Chiaro</div>
-        </div>
-        
-        <div class="product">
-          <img src="sneakers/nb-color.jpg" alt="New Balance Multicolor" />
-          <div class="product-name">New Balance Multicolor</div>
-        </div>
-        
-        <div class="product">
-          <img src="sneakers/nb-viola.jpg" alt="New Balance Viola" />
-          <div class="product-name">New Balance Viola</div>
-        </div>
-        </div>
-  <h2 id="tshirt" class="section-title">T-shirt</h2><div class="grid">
-        <div class="product">
-          <img src="tshirt/prada-nero.jpg" alt="T-shirt Prada Nera" />
-          <div class="product-name">T-shirt Prada Nera</div>
-        </div>
-        
-        <div class="product">
-          <img src="tshirt/prada-bianco.jpg" alt="T-shirt Prada Bianca" />
-          <div class="product-name">T-shirt Prada Bianca</div>
-        </div>
-        
-        <div class="product">
-          <img src="tshirt/prada-guess.jpg" alt="T-shirt Prada Logo Triangle" />
-          <div class="product-name">T-shirt Prada Logo Triangle</div>
-        </div>
-        </div>
-  <h2 id="accessori" class="section-title">Accessori</h2><div class="grid">
-        <div class="product">
-          <img src="accessori/lv-portachiavi.jpg" alt="Portachiavi Louis Vuitton" />
-          <div class="product-name">Portachiavi Louis Vuitton</div>
-        </div>
-        </div>
-
-  <footer id="contatti">
-    <h3>Contatti</h3>
+  <footer>
     <p>Email: <a href="mailto:info@modaluxout.it" style="color:gold;">info@modaluxout.it</a></p>
     <p>Instagram: <a href="https://instagram.com/modaluxout" target="_blank" style="color:gold;">@modaluxout</a></p>
   </footer>

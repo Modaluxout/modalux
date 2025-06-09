@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>MODALUXOUT</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 200px;
+      margin: 30px auto 20px;
+      display: block;
+    }
+
+    .icon-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .icon-link {
+      text-decoration: none;
+      color: #000;
+      font-size: 1em;
+      text-align: center;
+      width: 100px;
+    }
+
+    .icon-link img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon-link:hover img {
+      transform: scale(1.1);
+    }
+
+    .icon-label {
+      display: block;
+      font-weight: bold;
+    }
+
+       <!-- tasto Torna indietro -->
+
+    .back-button-container button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-button-container button:hover {
+    background-color: #444;
+  }
+      <!-- animazione immagini -->
+    
+.animated-image {
+      width: 200px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="logo/logo.png" alt="Logo MODALUXOUT" class="logo">
+
+  <!-- Icone cliccabili -->
+  <div class="icon-grid">
+        <a href="collezioni/collezioni.html" class="icon-link">
+      <img src="logo/collezioni.png" alt="collezioni">
+      <span class="icon-label"></span>
+    </a>
+    <a href="contatti/contatti.html" class="icon-link">
+      <img src="logo/contatti.png" alt="Contatti">
+      <span class="icon-label"></span>
+    </a>
+      </div>
+<div class="back-button-container">
+    <button onclick="window.history.back()">← Torna indietro</button>
+  </div>
+</body>
+</html>

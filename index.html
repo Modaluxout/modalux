@@ -1,92 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modaluxout</title>
+  <meta charset="UTF-8">
+  <title>Benvenuto - MODALUXOUT</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background-color: white;
-      background-image: url("sfondo.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      color: gold;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background-color: gold;
-      padding: 1.5rem 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      font-size: 1.5rem;
-    }
-    nav a {
-      color: gold;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-size: 1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .title {
-      font-weight: bold;
-    }
-    .symbol-nav {
-      display: flex;
       justify-content: center;
-      gap: 2rem;
-      padding: 3rem 1rem;
-      background: #1a1a1a;
-    }
-    .symbol-nav img {
-      width: 100px;
-      height: auto;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-    .symbol-nav img:hover {
-      transform: scale(1.1);
-    }
-    footer {
+      height: 100vh;
       text-align: center;
-      padding: 2rem;
-      color: gray;
-      font-size: 0.9rem;
+    }
+
+    img.logo {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      color: #111;
+      margin: 0;
+      animation: fadeInZoom 2s ease-out forwards;
+      opacity: 0;
+    }
+
+    p.slogan {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    a.enter-button {
+      padding: 15px 30px;
+      font-size: 1.1em;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    a.enter-button:hover {
+      background-color: #444;
+    }
+
+    @keyframes fadeInZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="title">MODALUXOUT</div>
-    <nav>
-      <a href="contatti/">Contatti</a>
-    </nav>
-  </header>
-
-  <div class="symbol-nav">
-    <a href="sneakers/index.html">
-      <img src="sneakers.png" alt="Sneakers">
-    </a>
-    <a href="tshirt/index.html">
-      <img src="bag.png" alt="Bag">
-    </a>
-    <a href="accessori/index.html">
-      <img src="sunglasses.png" alt="Accessories">
-    </a>
-    <a href="tshirt/index.html">
-      <img src="tshirt.png" alt="tshirt">
-    </a>
-
-  </div>
-
-  <footer>
-    <p>Email: <a href="mailto:modaluxout@proton.me" style="color:gold;">modaluxout@proton.me</a></p>
-    <p>Telegram: <a href="t.me/+y3Ri4QmbEnM5Yzl0" target="_blank" style="color:gold;">@telegram</a></p>
-  </footer>
+  <img src="logo/logo.png" alt="Logo MODALUXOUT" class="logo">
+  <h1>BENVENUTO</h1>
+  <p class="slogan">ESSENZIALE. ACCESSIBILE. TUO!</p>
+  <a href="home.html" class="enter-button">Entra nel sito</a>
 </body>
 </html>

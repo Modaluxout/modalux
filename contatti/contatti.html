@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti - MODALUXOUT</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      color: #111;
+    }
+
+    header {
+      padding: 30px 20px 10px;
+    }
+
+    header img {
+      max-width: 160px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-top: 10px;
+    }
+
+    .contacts-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .contact-link {
+      text-decoration: none;
+      color: #000;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.2s ease;
+    }
+
+    .contact-link:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-link img {
+      width: 30px;
+      height: 30px;
+    }
+    .back-button-container button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-button-container button:hover {
+    background-color: #444;
+  }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo MODALUXOUT">
+    <h1>Contattaci</h1>
+  </header>
+
+  <div class="contacts-container">
+    <a class="contact-link" href="https://www.instagram.com/modaluxout" target="_blank">
+      <img src="instagram.png" alt="Instagram"> Instagram
+    </a>
+    <a class="contact-link" href="https://t.me/modaluxout" target="_blank">
+      <img src="telegram.png" alt="Telegram"> Telegram
+    </a>
+    <a class="contact-link" href="https://wa.me/393331112222" target="_blank">
+      <img src="whatsapp.png" alt="WhatsApp"> WhatsApp
+    </a>
+  </div>
+   <div class="back-button-container">
+    <button onclick="window.history.back()">← Torna indietro</button>
+  </div>
+
+</body>
+</html>
